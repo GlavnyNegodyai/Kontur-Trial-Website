@@ -1,3 +1,10 @@
+.mobile-content{
+    display: none;
+   }
+   .pc-content{
+       display: inline;
+   }
+
 @import "main-header.less";
 @import "slider.less";
 @import "advantages.less";
@@ -99,14 +106,14 @@ h2{
     display: none;
 }
 
-.mobile-content{
- display: none;
-}
-.pc-content{
-    display: inline;
-}
-
 @media screen and (max-width: 320px) {
+    .mobile-content{
+        display: inline;
+    }
+    
+    .pc-content{
+        display: none;
+    }
     @import "/source/less/mobile-less/main-header_mobile.less";
     @import "/source/less/mobile-less/slider_mobile.less";
     @import "/source/less/mobile-less/advantages_mobile.less";
@@ -173,12 +180,5 @@ h2{
     h2{
         font-weight: 400;
         font-size: 34px;
-    }
-    .mobile-content{
-        display: inline;
-    }
-    
-    .pc-content{
-        display: none;
     }
 }
