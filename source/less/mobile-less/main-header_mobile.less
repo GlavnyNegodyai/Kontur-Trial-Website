@@ -1,0 +1,63 @@
+.main-header{
+    background-color: white; 
+    border-radius: @border-radius;
+    height: 50px;
+    width: 294px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.main-header_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: inherit;
+    padding-right: 17px;
+    padding-left: 22px;
+}
+.main-header_list .telephone-link{
+    margin-right: 10px;
+}
+.main-header_website-menu_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    padding: 0;
+}
+.main-header_website-menu_list_element:nth-child(2){
+    margin-left: 4.3vw;
+}
+.main-header_website-menu_link:hover{
+    color: @red-color;
+}
+.main-header_mobile-menu-show-button{
+    background-image: url("/source/images/mobile/mobile-menu.svg");
+    border: none;
+    background-color: white;
+    width: 17px;
+    height: 14px;
+}
+.main-header_mobile-menu-hide-button{
+    background-color: transparent;
+    border: none;
+    background-image: url("/source/images/mobile/close-cross.svg");
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 32px;
+    left: 275px;
+}
+#main-header-mobile-menu-popover{
+    width: 320px;
+    height: 610px;
+    border: none;
+}
+.main-header-mobile-menu_list{
+    margin: 80px 43px 0 0;
+}
+.main-header-mobile-menu_list_element{
+    font-size: 20px;
+    line-height: 40px;
+}

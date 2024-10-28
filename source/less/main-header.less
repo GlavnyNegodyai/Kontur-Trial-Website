@@ -1,0 +1,32 @@
+.main-header{
+    background-color: white; 
+    border-radius: @border-radius;
+    height: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.main-header_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    height: inherit;
+    padding-right: 2vw;
+    padding-left: 2vw;
+}
+.main-header_website-menu_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-size: 13px;
+    padding: 0;
+}
+.main-header_website-menu_list_element:nth-child(n + 2){
+    margin-left: 4vw;
+}
+.main-header_website-menu_list_element:nth-child(2){
+    margin-left: 4.3vw;
+}
+.main-header_website-menu_link:hover{
+    color: @red-color;
+}

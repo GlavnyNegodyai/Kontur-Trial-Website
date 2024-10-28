@@ -1,0 +1,280 @@
+<html lang="ru">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+        <title>CoDe|Заглавная страница</title>
+        <link rel="stylesheet/less" type="text/css" href="/source/less/main.less" />
+        <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+
+        <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+
+        <script src="/source/js/fancybox.umd.js"></script>
+        <link rel="stylesheet" href="/source/css/fancybox.css" />
+    </head>
+    <body>
+        <header class="main-header">
+                <ul class="main-header_list">
+                    <li class="main-header_list_element">
+                        <nav class="main-header_website-menu">
+                            <ul class="main-header_website-menu_list">
+                                <li class="main-header_website-menu_list_element website-logo">
+                                    <span class="website-logo_C-letter">C</span>o<span class="website-logo_D-letter">D</span>e</span>
+                                </li>
+                                <li class="main-header_website-menu_list_element pc-content"><a class="main-header_website-menu_link" href="#">Чему вы научитесь</a></li>
+                                <li class="main-header_website-menu_list_element pc-content"><a class="main-header_website-menu_link" href="#">Процесс обучения</a></li>
+                                <li class="main-header_website-menu_list_element pc-content"><a class="main-header_website-menu_link" href="#">Стоимость</a></li>
+                                <li class="main-header_website-menu_list_element pc-content"><a class="main-header_website-menu_link" href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </li>
+                    <li class="main-header_list_element"><a class="telephone-link" type="tel">+7 (499) 348 93 96</a></li>
+                    <li class="main-header_list_element mobile-content"><button class="main-header_mobile-menu-show-button" popovertarget="main-header-mobile-menu-popover" popovertargetaction="show"></button></li>
+                    <div id="main-header-mobile-menu-popover" popover>
+                        <button popovertarget="main-header-mobile-menu-popover" popovertargetaction="hide" class="main-header_mobile-menu-hide-button"></button>
+                        <ul class="main-header-mobile-menu_list">
+                            <li class="main-header-mobile-menu_list_element"><a class="main-header-mobile-menu_link" href="#">Чему вы научитесь</a></li>
+                            <li class="main-header-mobile-menu_list_element"><a class="main-header-mobile-menu_link" href="#">Процесс обучения</a></li>
+                            <li class="main-header-mobile-menu_list_element"><a class="main-header-mobile-menu_link" href="#">Стоимость</a></li>
+                            <li class="main-header-mobile-menu_list_element"><a class="main-header-mobile-menu_link" href="#">Контакты</a></li>
+                         </ul>
+                    </div>
+                </ul>
+            
+        </header>
+    <main>
+        <section class="top-slider-section">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <span class="top-slider_element">
+                                    <span class="top-slider_element_text-and-button">
+                                        <h1>Школа <span class="top-slider_curved-bracket top-slider_opening-curved-bracket">&#123;</span><b>программирования</b><span class="top-slider_curved-bracket top-slider_closing-curved-bracket">&#125;</span> </br>
+                                            для тех, кому нужны </br>
+                                            реальные навыки, </br>
+                                            а не просто сертификат 
+                                        </h1>
+                                        <p class="pc-content">Закажите звонок, и наш специалист свяжется с</br> 
+                                            вами в ближайшее время
+                                        </p>
+                                        <p class="mobile-content">Пройдите тестирование, чтобы получить доступ к бесплатным вводным урокам</p>
+                                    </span>
+                                    <img src="/source/images/slider-images/top-slider-image-1.png" class="top-slider_image" id="slider-image-1">
+                                </span>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="top-slider_element" >
+                                    <span class="top-slider_element_text-and-button">
+                                        <h1>Обучение<br/>
+                                            через практику
+                                        </h1>
+                                        <p>Всё, что вы узнали, вы тут же начинаете применять на практике. Вы сразу видите результаты своего труда.
+                                        </p>
+                                    </span>
+                                    <img src="/source/images/slider-images/top-slider-image-2.png" class="top-slider_image" id="slider-image-2">
+                                </span>
+                            </div>
+                            <div class="swiper-slide">
+                                <span class="top-slider_element">
+                                    <span class="top-slider_element_text-and-button">
+                                        <h1>Весь материал разбит на небольшие уроки
+                                        </h1>
+                                        <p>Теория и практика подаются маленькими порциями. Так вам будет легче усваивать новые знания.
+                                        </p>
+                                    </span>
+                                    <img src="/source/images/slider-images/top-slider-image-3.png" class="top-slider_image" id="slider-image-3">
+                                </span>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev slider-button"></div>
+                        <div class="swiper-button-next slider-button"></div>
+                    </div>
+                    <button class="top-slider_order-telephone-call-button" popovertarget="order-call-popover">Заказать звонок</button>
+                    <div id="order-call-popover" popover>
+                        <h3 class="order-call_title">Заказать звонок</h3>
+                        <span class="order-call-container">
+                            
+                            <label class="order-call_label">Имя</label>
+                            <input type="text" class="order-call_input" placeholder="ваше имя">
+                            <label class="order-call_label">Телефон</label>
+                            <input type="tel" class="order-call_input" placeholder="+7 ХХХ - ХХХ - ХХ -ХХ">
+                            <label class="order-call_label">Email</label>
+                            <input type="email" class="order-call_input" placeholder="mail@site.com">
+                            <label class="order-call_label">Сообщение</label>
+                            <textarea class="order-call_textarea" placeholder="Ваше сообщение ..."></textarea>
+                            <div class="order-call_conf-polit">Нажимая кнопку “Отправить”, соглашаюсь с<br/><a>политикой конфидениальности</a></div>
+                            <button class="order-call_send-info-button">Отправить</button>
+                        </span>
+                    </div>
+        </section>
+        <section class="advantages-section advantages-section_small-cards">
+            <h1>Обучение в CoDe – это удобно и
+                результативно</h1>
+            <span class="advantages-cards-block">
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/code-window.svg" class="advantages-cards-block_element_image">
+                    <h3>Огромное</br>
+                        количество практики</h3>
+                    <p>Более 500 самостоятельных</br>
+                        заданий и 20 полноценных</br>
+                        больших проектов</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/warp.svg" class="advantages-cards-block_element_image">
+                    <h3>Современные</br>
+                        методики обучения</h3>
+                    <p>Спиральное обучение:</br>
+                        погружаемся в материал</br>
+                        постепенно, виток за витком</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/monitor.svg" class="advantages-cards-block_element_image">
+                    <h3>Простое и понятное</br>
+                        изложение</h3>
+                    <p>Вместо заумных</br>
+                        терминов – примеры</br>
+                        из реального мира</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/calendar.svg" class="advantages-cards-block_element_image">
+                    <h3>Гибкий график</br>
+                        занятий</h3>
+                    <p>Учитесь в любое</br>
+                        время в удобном</br> 
+                        для вас темпе</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/message-popups-image.svg" class="advantages-cards-block_element_image">
+                    <h3>Прямая связь с опытными</br>
+                        программистами</h3>
+                    <p>Задавайте вопросы</br>
+                        и отправляйте свой код</br>
+                        на проверку</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/money.svg" class="advantages-cards-block_element_image">
+                    <h3>Оплата небольшими</br>
+                        частями</h3>
+                    <p>Платите только за тот материал,</br>
+                        который сейчас изучаете,</br>
+                        а не за весь курс сразу</p>
+                </span>
+                <span class="advantages-cards-block_element">
+                    <img src="/source/images/svg-icons/advantages-icons/smartphone.svg" class="advantages-cards-block_element_image">
+                    <div class="advantages-cards-block_element_text-container">
+                        <h3>Быстрый и легкий</br>
+                            возврат</h3>
+                        <p>Если передумаете учиться –
+                            вернем деньги за 3
+                            рабочих дня</p>
+                    </div>
+                </span>
+            </span>
+        </section>
+        <section class="advantages-section advantages-section_with-image">
+            <span class="advantages-section_with-image_element">
+                <img src="/source/images/png-images/guys-talking.png" class="advantages-section_with-image_element_image">
+            </span>
+            <span class="advantages-section_with-image_element advantages-section_with-image_element_text">
+                <div class="advantages-section_with-image_element_text_container">
+                    <h2>Помощь и поддержка</h2>
+                    <p>Если в процессе обучения возникнут сложности, вы<br/>
+                        всегда сможете задать вопрос своему наставнику.
+                    </p>
+                    <p>Раз в несколько уроков вы будете получать большое задание, которое<br/>
+                        нужно будет сдавать на проверку код-ревьюеру. Он внимательно<br/>
+                        изучит ваш код, найдет ошибки и поможет вам стать лучше.
+                    </p>
+                </div>
+            </span>
+            <span class="advantages-section_with-image_element advantages-section_with-image_element_text">
+                <div class="advantages-section_with-image_element_text_container">
+                    <h2>Методика обучения</h2>
+                    <p>Весь учебный материал структурирован по принципу<br/>
+                        «спирального обучения». Сначала вы получаете базовые знания,<br/>
+                        а затем на каждом витке спирали углубляетесь в изученные темы,<br/>
+                        доводя их понимание до совершенства. Такой подход упрощает<br/>
+                        обучение и гарантирует, что вы не пропустите ничего важного.
+                    </p>
+                </div>
+            </span>
+            <span class="advantages-section_with-image_element">
+                <img src="/source/images/png-images/guy-and-girl-talking.png" class="advantages-section_with-image_element_image">
+            </span>
+        </section>
+        <section class="gallery-section">
+            <span class="gallery_element_grid gallery_element_grid-1">
+                <a href="/source/images/png-images/girls-talking.png" data-fancybox>
+                    <img src="/source/images/png-images/girls-talking.png" class="gallery_element_img">
+                </a>
+            </span>
+            <span class="gallery_element_grid gallery_element_grid-2">
+                <a href="/source/images/png-images/programming-language-keyboard.png" data-fancybox>
+                    <img src="/source/images/png-images/programming-language-keyboard.png" class="gallery_element_img">
+                </a>
+            </span>
+            <span class="gallery_element_grid gallery_element_grid-3">
+                <a href="/source/images/png-images/laptop-typing-1.png" data-fancybox>
+                    <img src="/source/images/png-images/laptop-typing-1.png" class="gallery_element_img">
+                </a>
+            </span>
+            <span class="gallery_element_grid gallery_element_grid-4">
+                <a href="/source/images/png-images/laptop-typing-2.png" data-fancybox>
+                    <img src="/source/images/png-images/laptop-typing-2.png" class="gallery_element_img">
+                </a>
+            </span>
+            <span class="gallery_element_grid gallery_element_grid-5">
+                <a href="/source/images/png-images/kid-looking.png" data-fancybox>
+                    <img src="/source/images/png-images/kid-looking.png" class="gallery_element_img">
+                </a>
+            </span>
+        </section>
+        <section class="map-section">
+            <div id="map"></div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="main-footer_top-part">
+            <span class="main-footer_top-part_logo-and-social-media">
+                <span class="website-logo-and-description">
+                    <span class="website-logo">
+                        <span class="website-logo_C-letter">C</span>o<span class="website-logo_D-letter">D</span>e
+                    </span>
+                    <p class="website-logo_description">Школа программирования</p>
+                </span>
+                <ul class="social-medias-list">
+                    <li class="social-medias-list_element"><a href="#"><img src="/source/images/svg-icons/social-media-icons/Group.svg"></a></li>
+                    <li class="social-medias-list_element"><a href="#"><img src="/source/images/svg-icons/social-media-icons/Vector (1).svg"></a></li>
+                    <li class="social-medias-list_element"><a href="№"><img src="/source/images/svg-icons/social-media-icons/Vector (2).svg"></a></li>
+                    <li class="social-medias-list_element"><a href="#"><img src="/source/images/svg-icons/social-media-icons/Vector.svg"></a></li>
+                </ul>
+            </span>
+            <nav class="main-footer_menu">
+                <ul class="main-footer_menu_list">
+                    <li class="main-footer_menu_list_element"><a href="#">Чему вы научитесь</a></li>
+                    <li class="main-footer_menu_list_element"><a href="#">Процесс обучения</a></li>
+                    <li class="main-footer_menu_list_element"><a href="#">Стоимость</a></li>
+                    <li class="main-footer_menu_list_element"><a href="#">Контакты</a></li>
+                    <li class="main-footer_menu_list_element"><a href="#">Регистрация</a></li>
+                </ul>
+            </nav>
+            <span class="main_footer_contacts">
+                <a class="telephone-link">+7 (999) 999 99 99</a>
+                <div class="main_footer_contacts_email">info@code.ru</div>
+            </span>
+        </section>
+        <section class="main-footer_bottom-part">
+            <span>© 2023 — Все права защищены</span>
+            <span><a href="#">Пользовательское соглашение</a></span>
+            <span><a href="#">Политика конфиденциальности</a></span>
+        </section>
+    </footer>
+    <script src="/source/js/script.js"></script>
+  </body>
+</html>
